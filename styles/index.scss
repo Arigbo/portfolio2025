@@ -63,9 +63,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-section{
-    padding-block: 3rem;
-}
+    section {
+      padding-block: 3rem;
+    }
     .hero {
       display: flex;
       flex-direction: column;
@@ -343,13 +343,55 @@ section{
             height: 100%;
             gap: 1rem;
             &_left {
-              width: 35%;
+              width: 40%;
               height: 100%;
+
               img {
                 width: 100%;
                 height: 100%;
                 border-radius: 1rem;
+// border: 1px solid;
               }
+              .bottom {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 0;
+                width: 0;
+                transition: all 0.8s ease;
+                position: relative;
+                top: -102%;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                border-radius: 1rem;
+                background-color: rgba(0, 0, 0, 0.5);
+                .qrcode {
+                    display: flex;
+                    height: 100%;
+                    width: 100%;
+                  align-items: center;
+                  justify-content: center;
+
+                 
+                  &_inner {
+                    width: 35%;
+                    width: 35%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                      border: 0;
+                    }
+                  }
+                }
+              }
+            }
+            &_left:hover {
+.bottom{
+    height: 100%;
+    width: 100%;
+}
             }
             &_right {
               display: flex;
@@ -357,8 +399,10 @@ section{
               align-items: start;
               gap: 0.5rem;
               width: 50%;
+              height: 100%;
               .top {
                 width: 100%;
+                height: 10%;
                 h1 {
                   font-size: 20px;
                   font-weight: 700;
@@ -367,13 +411,21 @@ section{
               }
               .second {
                 width: 100%;
+                height: fit-content;
+                overflow-x: hidden;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 p {
+                  width: 100%;
+
                   font-size: 14px;
                   font-weight: 400;
                   color: gray;
                 }
               }
               .third {
+                height: 50%;
                 width: 100%;
                 display: flex;
                 flex-direction: column;
@@ -468,7 +520,7 @@ section{
           }
         }
       }
-      .border{
+      .border {
         border: 1px solid rgb(198, 196, 196);
         border-inline: 0;
         width: 60%;
@@ -522,7 +574,7 @@ section{
           display: flex;
           flex-direction: column;
           align-items: center;
-          &_inner{
+          &_inner {
             display: flex;
             align-items: center;
             gap: 1rem;
@@ -547,7 +599,7 @@ section{
               display: flex;
               align-items: center;
               gap: 0.2rem;
-              h2{
+              h2 {
                 font-size: 20px;
                 font-weight: 500;
               }
@@ -557,5 +609,4 @@ section{
       }
     }
   }
-  
 }
