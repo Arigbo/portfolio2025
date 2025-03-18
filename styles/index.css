@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
   width: 100%;
 }
 .portfolio_nav {
@@ -472,8 +471,7 @@
 .portfolio_inner .skills {
   width: 100%;
   padding-block: 3rem;
-  background-color: black;
-  color: white;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -591,4 +589,60 @@
 .portfolio_inner .skills_bottom .bottom .skill_inner h2 {
   font-size: 20px;
   font-weight: 500;
+}
+.portfolio_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60vh;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+.portfolio_footer_inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90%;
+  width: 90%;
+  gap: 1rem;
+}
+.portfolio_footer_inner .left,
+.portfolio_footer_inner .right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio_footer_inner .left p,
+.portfolio_footer_inner .right p {
+  width: 100%;
+  font-size: 40px;
+}
+.portfolio_footer_inner .left p .tag,
+.portfolio_footer_inner .right p .tag {
+  font-size: 28px;
+  color: rgb(205, 88, 117);
+}
+.portfolio_footer_inner .left p span,
+.portfolio_footer_inner .right p span {
+  color: green;
+}
+.portfolio_footer_inner .left_inner,
+.portfolio_footer_inner .right_inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+.portfolio_footer_inner .left_inner_top, .portfolio_footer_inner .left_inner_bottom,
+.portfolio_footer_inner .right_inner_top,
+.portfolio_footer_inner .right_inner_bottom {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }/*# sourceMappingURL=index.css.map */
