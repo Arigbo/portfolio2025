@@ -1,0 +1,704 @@
+{
+  "post": [
+    {
+      "bookmark":true,
+      "parking":true,
+      "disabled":true,
+      "pet":true,
+      "apartmentType":"twoBedroom",
+      "ban": false,
+      "name": "Jaime",
+      "about":"Whatever your budget or need, we make finding the perfect workspace easy. From flexible memberships to move-in ready offices, we give you the space and solutions to do your best work.",
+      "ownersProfile": {
+        "surname": "Aigbo",
+        "firstName": "James",
+        "dp": "/images/9334180 4.png",
+        "ownersAvailTime": {
+          "days": [
+            "Monday",
+            "Tuesday"
+          ],
+          "time": [
+            "12am-3pm",
+            "12am-3pm"
+          ]
+        }
+      },
+      "school": "University Of Port Harcourt",
+      "frontyard": {
+        "picture": "/images/Slide.png",
+        "name": "frontyard"
+      },
+      "toilet": {
+        "picture": "/images/Slide.png",
+        "name": "toilet",
+        "available": true,
+        "amount": 2
+      },
+      "restroom": {
+        "picture": "/images/Slide.png",
+        "name": "restroom"
+      },
+      "kitchen": {
+        "picture": "/images/Slide.png",
+        "name": "kitchen"
+      },
+      "wardrobe": {
+        "picture": "/images/Slide.png",
+        "name": "wardrobe"
+      },
+      "backyard": {
+        "picture": "/images/Slide.png",
+        "name": "backyard"
+      },
+      "price": 200000,
+      "location": {
+        "houseNo": "No.5",
+        "streetName": "lakahia",
+        "state": "Rivers state",
+        "country": "Nigeia"
+      },
+      "id": 1
+    },
+    {
+      "bookmark":true,
+      "parking":true,
+      "disabled":true,
+      "pet":true,
+      "apartmentType":"selfCon",
+      "ban": false,
+      "name": "Jaime",
+      "ownersProfile": {
+        "surname": "Aigbo",
+        "firstName": "James",
+        "dp": "/images/9334180 4.png"
+      },
+      "DtoS": 40,
+      "tfp": 20,
+      "school": "UNIVERSITY OF PORT HARCOURT",
+      "frontyard": {
+        "picture": "/images/Slide.png",
+        "name": "frontyard"
+      },
+      "toilet": {
+        "picture": "/images/Slide.png",
+        "name": "toilet",
+        "available": true,
+        "amount": 2
+      },
+      "restroom": {
+        "picture": "/images/Slide.png",
+        "name": "restroom"
+      },
+      "kitchen": {
+        "picture": "/images/Slide.png",
+        "name": "kitchen"
+      },
+      "wardrobe": {
+        "picture": "/images/Slide.png",
+        "name": "wardrobe"
+      },
+      "backyard": {
+        "picture": "/images/Slide.png",
+        "name": "backyard"
+      },
+      "selfCon": true,
+      "price": 50000,
+      "location": {
+        "houseNo": "No.51",
+        "streetName": "Alakahia",
+        "state": "Imo state",
+        "country": "Nigeria"
+      },
+      "availableRooms": 1,
+      "id": 2
+    },
+    {
+      "bookmark":true,
+      "parking":true,
+      "disabled":true,
+      "pet":true,
+      "apartmentType":"oneBedroom",
+      "ban": false,
+      "ownersProfile": {
+        "surname": "Aigbo",
+        "firstName": "James",
+        "dp": "/images/9334180 4.png"
+      },
+      "DtoS": 40,
+      "tfp": 20,
+      "school": "UNIVERSITY OF PORT HARCOURT",
+      "frontyard": {
+        "picture": "/images/Slide.png",
+        "name": "frontyard"
+      },
+      "toilet": {
+        "picture": "/images/Slide.png",
+        "name": "toilet",
+        "available": true,
+        "amount": 2
+      },
+      "restroom": {
+        "picture": "/images/Slide.png",
+        "name": "restroom"
+      },
+      "kitchen": {
+        "picture": "/images/Slide.png",
+        "name": "kitchen"
+      },
+      "wardrobe": {
+        "picture": "/images/Slide.png",
+        "name": "wardrobe"
+      },
+      "backyard": {
+        "picture": "/images/Slide.png",
+        "name": "backyard"
+      },
+      "selfCon": true,
+      "price": 77,
+      "location": {
+        "houseNo": "No.51",
+        "streetName": "Alakahia",
+        "state": "Imo state",
+        "country": "Nigeria"
+      },
+      "availableRooms": 1,
+      "id": 3
+    },
+    {
+      "bookmark":true,
+      "parking":true,
+      "disabled":true,
+      "pet":true,
+      "apartmentType":"oneBedroom",
+      "ban": false,
+      "name": "Jaime",
+      "ownersProfile": {
+        "surname": "Aigbo",
+        "firstName": "James",
+        "dp": "/images/9334180 4.png"
+      },
+      "DtoS": 40,
+      "tfp": 20,
+      "school": "UNIVERSITY OF PORT HARCOURT",
+      "frontyard": {
+        "picture": "/images/Slide.png",
+        "name": "frontyard"
+      },
+      "toilet": {
+        "picture": "/images/Slide.png",
+        "name": "toilet",
+        "available": true,
+        "amount": 2
+      },
+      "restroom": {
+        "picture": "/images/Slide.png",
+        "name": "restroom"
+      },
+      "kitchen": {
+        "picture": "/images/Slide.png",
+        "name": "kitchen"
+      },
+      "wardrobe": {
+        "picture": "/images/Slide.png",
+        "name": "wardrobe"
+      },
+      "backyard": {
+        "picture": "/images/Slide.png",
+        "name": "backyard"
+      },
+      "selfCon": true,
+      "price": 77,
+      "location": {
+        "houseNo": "No.51",
+        "streetName": "Alakahia",
+        "state": "Imo state",
+        "country": "Nigeria"
+      },
+      "availableRooms": 1,
+      "id": 4
+    },
+    {
+      "bookmark":true,
+      "parking":true,
+      "disabled":true,
+      "pet":true,
+      "apartmentType":"oneBedroom",
+      "ban": false,
+      "name": "ferferfe",
+      "ownersProfile": {
+        "surname": "Aigbo",
+        "firstName": "James",
+        "dp": "/images/9334180 4.png"
+      },
+      "DtoS": 40,
+      "tfp": 20,
+      "school": "UNIVERSITY OF PORT HARCOURT",
+      "frontyard": {
+        "picture": "/images/Slide.png",
+        "name": "frontyard"
+      },
+      "toilet": {
+        "picture": "/images/Slide.png",
+        "name": "toilet",
+        "available": true,
+        "amount": 2
+      },
+      "restroom": {
+        "picture": "/images/Slide.png",
+        "name": "restroom"
+      },
+      "kitchen": {
+        "picture": "/images/Slide.png",
+        "name": "kitchen"
+      },
+      "wardrobe": {
+        "picture": "/images/Slide.png",
+        "name": "wardrobe"
+      },
+      "backyard": {
+        "picture": "/images/Slide.png",
+        "name": "backyard"
+      },
+      "oneBedRoom": true,
+      "price": 45,
+      "location": {
+        "houseNo": "No.51",
+        "streetName": "Alakahia",
+        "state": "Imo state",
+        "country": "Nigeria"
+      },
+      "availableRooms": 9,
+      "id": 5
+    },
+    {
+      "apartmentType":"oneBedroom",
+      "parking":true,
+      "disabled":true,
+      "pet":true,
+      "ban": false,
+      "name": "fedd",
+      "ownersProfile": {
+        "surname": "Aigbo",
+        "firstName": "James",
+        "dp": "/images/9334180 4.png"
+      },
+      "DtoS": 40,
+      "tfp": 20,
+      "school": "UNIVERSITY OF PORT HARCOURT",
+      "frontyard": {
+        "picture": "/images/Slide.png",
+        "name": "frontyard"
+      },
+      "toilet": {
+        "picture": "/images/Slide.png",
+        "name": "toilet",
+        "available": true,
+        "amount": 2
+      },
+      "restroom": {
+        "picture": "/images/Slide.png",
+        "name": "restroom"
+      },
+      "kitchen": {
+        "picture": "/images/Slide.png",
+        "name": "kitchen"
+      },
+      "wardrobe": {
+        "picture": "/images/Slide.png",
+        "name": "wardrobe"
+      },
+      "backyard": {
+        "picture": "/images/Slide.png",
+        "name": "backyard"
+      },
+      "oneRoom": true,
+      "price": 4,
+      "location": {
+        "houseNo": "No.51",
+        "streetName": "Alakahia",
+        "state": "Imo state",
+        "country": "Nigeria"
+      },
+      "availableRooms": 8,
+      "id": 6
+    },
+    {
+      "parking":true,
+      "disabled":true,
+      "pet":true,
+      "apartmentType":"oneBedroom",
+      "ban": false,
+      "name": "crop",
+      "ownersProfile": {
+        "surname": "Aigbo",
+        "firstName": "James",
+        "dp": "/images/9334180 4.png"
+      },
+      "DtoS": 40,
+      "tfp": 20,
+      "school": "UNIVERSITY OF PORT HARCOURT",
+      "frontyard": {
+        "picture": "/images/Slide.png",
+        "name": "frontyard"
+      },
+      "toilet": {
+        "picture": "/images/Slide.png",
+        "name": "toilet",
+        "available": true,
+        "amount": 2
+      },
+      "restroom": {
+        "picture": "/images/Slide.png",
+        "name": "restroom"
+      },
+      "kitchen": {
+        "picture": "/images/Slide.png",
+        "name": "kitchen"
+      },
+      "wardrobe": {
+        "picture": "/images/Slide.png",
+        "name": "wardrobe"
+      },
+      "backyard": {
+        "picture": "/images/Slide.png",
+        "name": "backyard"
+      },
+      "twoRoom": true,
+      "price": 39,
+      "location": {
+        "houseNo": "No.51",
+        "streetName": "Alakahia",
+        "state": "Imo state",
+        "country": "Nigeria"
+      },
+      "availableRooms": 3,
+      "id": 7
+    },
+    {
+      "apartmentType":"oneBedroom",
+      "parking":true,
+      "disabled":true,
+      "pet":true,
+      "ban": false,
+      "name": "history",
+      "ownersProfile": {
+        "surname": "Aigbo",
+        "firstName": "James",
+        "dp": "/images/9334180 4.png"
+      },
+      "DtoS": 40,
+      "tfp": 20,
+      "school": "UNIVERSITY OF PORT HARCOURT",
+      "frontyard": {
+        "picture": "/images/Slide.png",
+        "name": "frontyard"
+      },
+      "toilet": {
+        "picture": "/images/Slide.png",
+        "name": "toilet",
+        "available": true,
+        "amount": 2
+      },
+      "restroom": {
+        "picture": "/images/Slide.png",
+        "name": "restroom"
+      },
+      "kitchen": {
+        "picture": "/images/Slide.png",
+        "name": "kitchen"
+      },
+      "wardrobe": {
+        "picture": "/images/Slide.png",
+        "name": "wardrobe"
+      },
+      "backyard": {
+        "picture": "/images/Slide.png",
+        "name": "backyard"
+      },
+      "twoRoom": true,
+      "price": 35,
+      "location": {
+        "houseNo": "No.51",
+        "streetName": "Alakahia",
+        "state": "Imo state",
+        "country": "Nigeria"
+      },
+      "availableRooms": 0,
+      "id": 8
+    },
+    {
+      "parking":true,
+      "disabled":true,
+      "pet":true,
+      "apartmentType":"oneBedroom",
+      "ban": false,
+      "name": "sasssss",
+      "ownersProfile": {
+        "surname": "Aigbo",
+        "firstName": "James",
+        "dp": "/images/9334180 4.png"
+      },
+      "DtoS": 40,
+      "tfp": 20,
+      "school": "UNIVERSITY OF PORT HARCOURT",
+      "frontyard": {
+        "picture": "/images/Slide.png",
+        "name": "frontyard"
+      },
+      "toilet": {
+        "picture": "/images/Slide.png",
+        "name": "toilet",
+        "available": true,
+        "amount": 2
+      },
+      "restroom": {
+        "picture": "/images/Slide.png",
+        "name": "restroom"
+      },
+      "kitchen": {
+        "picture": "/images/Slide.png",
+        "name": "kitchen"
+      },
+      "wardrobe": {
+        "picture": "/images/Slide.png",
+        "name": "wardrobe"
+      },
+      "backyard": {
+        "picture": "/images/Slide.png",
+        "name": "backyard"
+      },
+      "twoRoom": true,
+      "price": 39,
+      "location": {
+        "houseNo": "No.51",
+        "streetName": "Alakahia",
+        "state": "Imo state",
+        "country": "Nigeria"
+      },
+      "availableRooms": 3,
+      "id": 9
+    },
+    {
+      "apartmentType":"oneBedroom",
+      "parking":true,
+      "disabled":true,
+      "pet":true,
+      "ban": false,
+      "name": "vocalllll",
+      "ownersProfile": {
+        "surname": "Aigbo",
+        "firstName": "James",
+        "dp": "/images/9334180 4.png"
+      },
+      "DtoS": 40,
+      "tfp": 20,
+      "school": "UNIVERSITY OF PORT HARCOURT",
+      "frontyard": {
+        "picture": "/images/komi.png",
+        "name": "frontyard"
+      },
+      "toilet": {
+        "picture": "/images/Slide.png",
+        "name": "toilet",
+        "available": false,
+        "amount": 0
+      },
+      "restroom": {
+        "picture": "/images/Slide.png",
+        "name": "restroom"
+      },
+      "kitchen": {
+        "picture": "/images/Slide.png",
+        "name": "kitchen"
+      },
+      "wardrobe": {
+        "picture": "/images/Slide.png",
+        "name": "wardrobe"
+      },
+      "backyard": {
+        "picture": "/images/Slide.png",
+        "name": "backyard"
+      },
+      "twoRoom": true,
+      "price": 39,
+      "location": {
+        "houseNo": "No.51",
+        "streetName": "Alakahia",
+        "state": "Imo state",
+        "country": "Nigeria"
+      },
+      "availableRooms": 3,
+      "id": 10
+    }
+  ],
+  "users": [
+    {
+      "user": {
+        "id": 1,
+        "firstName": "James",
+        "lastName": "Friday",
+        "username": "Friday",
+        "school": "Uniport",
+        "usedAptId": 222,
+        "dp": "/images/9334180 4.png",
+        "logged":true,
+        "bookmarks": [
+          {
+            "ban": false,
+            "name": "Jaime",
+            "ownersProfile": {
+              "surname": "Aigbo",
+              "firstName": "James",
+              "dp": "/images/9334180 4.png",
+              "ownersAvailTime": {
+                "days": [
+                  "Monday",
+                  "Tuesday"
+                ],
+                "time": [
+                  "12am-3pm",
+                  "12am-3pm"
+                ]
+              }
+            },
+            "DtoS": 40,
+            "tfp": 20,
+            "school": "UNIVERSITY OF PORT HARCOURT",
+            "frontyard": {
+              "picture": "/images/Slide.png",
+              "name": "frontyard"
+            },
+            "toilet": {
+              "picture": "/images/Slide.png",
+              "name": "toilet",
+              "available": true,
+              "amount": 2
+            },
+            "restroom": {
+              "picture": "/images/Slide.png",
+              "name": "restroom"
+            },
+            "kitchen": {
+              "picture": "/images/Slide.png",
+              "name": "kitchen"
+            },
+            "wardrobe": {
+              "picture": "/images/Slide.png",
+              "name": "wardrobe"
+            },
+            "backyard": {
+              "picture": "/images/Slide.png",
+              "name": "backyard"
+            },
+            "selfCon": true,
+            "price": 77,
+            "location": {
+              "houseNo": "No.5",
+              "streetName": "lakahia",
+              "state": "Rivers state",
+              "country": "Nigeia"
+            },
+            "availableRooms": 1,
+            "id": 1
+          },
+          {
+            "ban": false,
+            "name": "Jaime",
+            "ownersProfile": {
+              "surname": "Aigbo",
+              "firstName": "James",
+              "dp": "/images/9334180 4.png"
+            },
+            "DtoS": 40,
+            "tfp": 20,
+            "school": "UNIVERSITY OF PORT HARCOURT",
+            "frontyard": {
+              "picture": "/images/Slide.png",
+              "name": "frontyard"
+            },
+            "toilet": {
+              "picture": "/images/Slide.png",
+              "name": "toilet",
+              "available": true,
+              "amount": 2
+            },
+            "restroom": {
+              "picture": "/images/Slide.png",
+              "name": "restroom"
+            },
+            "kitchen": {
+              "picture": "/images/Slide.png",
+              "name": "kitchen"
+            },
+            "wardrobe": {
+              "picture": "/images/Slide.png",
+              "name": "wardrobe"
+            },
+            "backyard": {
+              "picture": "/images/Slide.png",
+              "name": "backyard"
+            },
+            "selfCon": true,
+            "price": 77,
+            "location": {
+              "houseNo": "No.51",
+              "streetName": "Alakahia",
+              "state": "Imo state",
+              "country": "Nigeria"
+            },
+            "availableRooms": 1,
+            "id": 2
+          },
+          {
+            "ban": false,
+            "ownersProfile": {
+              "surname": "Aigbo",
+              "firstName": "James",
+              "dp": "/images/9334180 4.png"
+            },
+            "DtoS": 40,
+            "tfp": 20,
+            "school": "UNIVERSITY OF PORT HARCOURT",
+            "frontyard": {
+              "picture": "/images/Slide.png",
+              "name": "frontyard"
+            },
+            "toilet": {
+              "picture": "/images/Slide.png",
+              "name": "toilet",
+              "available": true,
+              "amount": 2
+            },
+            "restroom": {
+              "picture": "/images/Slide.png",
+              "name": "restroom"
+            },
+            "kitchen": {
+              "picture": "/images/Slide.png",
+              "name": "kitchen"
+            },
+            "wardrobe": {
+              "picture": "/images/Slide.png",
+              "name": "wardrobe"
+            },
+            "backyard": {
+              "picture": "/images/Slide.png",
+              "name": "backyard"
+            },
+            "selfCon": true,
+            "price": 77,
+            "location": {
+              "houseNo": "No.51",
+              "streetName": "Alakahia",
+              "state": "Imo state",
+              "country": "Nigeria"
+            },
+            "availableRooms": 1,
+            "id": 3
+          }
+        ]
+      }
+    }
+  ]
+}
