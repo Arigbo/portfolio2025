@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/custom.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="admin">
+      <nav class="admin_nav">
+        <div class="admin_nav_inner">
+          <div class="menu exit">
+            <div class="menu_inner">
+              <a href="">home</a><a href="">projects</a><a href="">requests</a
+              ><a href="">portfolio</a>
+            </div>
+          </div>
+          <div class="left">
+            <a href="index.html" class="logo"
+              ><i class="fas fa-chevron-left"></i>ld<i
+                class="fas fa-chevron-right"
+              ></i
+            ></a>
+          </div>
+          <div class="right">
+            <i class="fas fa-bars bar"></i>
+          </div>
+        </div>
+      </nav>
+      <div class="admin_inner">
+        <section class="first">
+          <div class="first_inner">
+            <div class="left">
+              <img src="/9334180 4.png" alt="" />
+            </div>
+            <div class="right">
+              <h1>Arigbo Chidubem Jesse</h1>
+              <h2>5yrsXP</h2>
+            </div>
+          </div>
+        </section>
+        <section class="second">
+          <div class="second_inner">
+            <header>
+              <h1>List</h1>
+              <button class="add">+</button>
+            </header>
+            <div class="bottom"></div>
+          </div>
+        </section>
+      </div>
+      <div class="admin_bottom">
+        <div class="admin_bottom_inner">
+          <div class="admin_bottom_inner_top">
+            <h1>New Project</h1>
+            <h1 class="close">X</h1>
+          </div>
+          <div class="admin_bottom_inner_bottom">
+            <h2>Project Details</h2>
+            <form method="post">
+              <input type="text" placeholder="Name of project" id="name" />
+              <input type="file" name="" id="img" />
+              <input type="file" name="" id="qrcode" />
+              <textarea
+                name=""
+                id="about"
+                placeholder="About project"
+              ></textarea>
+              <input type="text" placeholder="client" id="client" />
+              <input type="text" placeholder="Category" id="category" />
+              <input type="" placeholder="techs" id="tech" />
+              <input type="text" placeholder="link1" id="link1" />
+              <input type="text" placeholder="link2" id="link2" />
+              <button>Done</button>
+              <button>Still on it</button>
+              <button onclick="createProject()">Create Project</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.querySelector(".bar").addEventListener("click", () => {
+      document.querySelector(".menu").classList.add("show");
+    });
+    document.querySelector(".exit").addEventListener("click", () => {
+      document.querySelector(".menu").classList.remove("show");
+    });
+    document.querySelector(".add").addEventListener("click", () => {
+      document.querySelector(".admin_bottom").classList.add("show");
+    });
+    document.querySelector(".close").addEventListener("click", () => {
+      document.querySelector(".admin_bottom").classList.remove("show");
+    });
+    function getProject() {
+      fetch("http://localhost:3000/projects")
+        .then((results) => results.json())
+        .then((data) => {
+          console.log(data);
+          data.map((item) => {
+            console.log(item.id);
+            return document.querySelector(".bottom").insertAdjacentHTML(
+              "beforeend",
+              `
+            <div class="box" key={${item.id}}>
+              <div class="box_inner">
+                <div class="box_inner_left">
+                  <img src={${item.img}} alt="" />
+                  <div class="bottom">
+                    <div class="qrcode">
+                      <div class="qrcode_inner">
+                        <img src={${item.qrcode}} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="box_inner_right">
+                  <div class="top">
+                    <h1>${item.name}</h1>
+                    <div>
+                  <i class="far fa-trash-can"></i>
+                    <i class="far fa-edit"></i>  
+                    </div>
+                  </div>
+                  <div class="second">
+                    <p>
+              ${item.about}
+                    </p>
+                  </div>
+                  <div class="third">
+                    <div class="third_header">
+                      <h2>Project Details</h2>
+                    </div>
+                    <div class="third_inner">
+                      <div class="info">
+                        <h3>Date</h3>
+                        <p>${item.date.day}/${item.date.month}/${item.date.year}</p>
+                      </div>
+                      <div class="info">
+                        <h3>Client</h3>
+                        <p>${item.client}</p>
+                      </div>
+                      <div class="info">
+                        <h3>Category</h3>
+                        <p>${item.category}</p>
+                      </div>
+                      <div class="info">
+                        <h3>Technologies</h3>
+                        <p>${item.tech}</p>
+                      </div>
+                    </div>
+                    <div class="third_bottom">
+                      <a href={${item.links[0]}}>View Project</a>
+                      <a href={${item.links[1]}}>Github Repo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="border"></div>
+            `
+            );
+          });
+        });
+    }
+    getProject();
+    let newDay = new Date();
+    let newMonth = new Date();
+    let newYear = new Date();
+    function createProject() {
+      const newProject = {
+        name: document.querySelector("#name").value,
+        img: document.querySelector("#img").value,
+        qrcode: document.querySelector("#qrcode").value,
+        about: document.querySelector("#about").value,
+        client: document.querySelector("#client").value,
+        category: document.querySelector("#category").value,
+        tech: [document.querySelector("#tech").value],
+        links: [
+          document.querySelector("#link1").value,
+          document.querySelector("#link2").value,
+        ],
+        date: {
+          day: newDay.getDay(),
+          month: newMonth.getMonth(),
+          year: newYear.getFullYear(),
+        },
+      };
+      if (
+        document.querySelector("#name").value.trim() == "" &&
+        document.querySelector("#about").value.trim() == "" &&
+        document.querySelector("#client").value.trim() == "" &&
+        document.querySelector("#category").value.trim() == "" &&
+        document.querySelector("#tech").value.trim() == "" &&
+        document.querySelector("#link1").value.trim() == "" &&
+        document.querySelector("#link2").value.trim() == ""
+      ) {
+        submitForm();
+      } else {
+        submitForm();
+        fetch(`http://localhost:3000/projects`, {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-type": "application/json",
+          },
+          body: JSON.stringify(newProject),
+        })
+          .then((result) => result.json())
+          .then((data) => console.log(data));
+        console.log(newProject);
+      }
+    }
+    function submitForm() {
+      event.preventDefault();
+    }
+    document.querySelector(".name").addEventListener("click", () => {
+      document.querySelector(".name").classList.add("clicked");
+      document.querySelector(".email").classList.remove("clicked");
+      document.querySelector(".message").classList.remove("clicked");
+    });
+    document.querySelector(".email").addEventListener("click", () => {
+      document.querySelector(".name").classList.remove("clicked");
+      document.querySelector(".email").classList.add("clicked");
+      document.querySelector(".message").classList.remove("clicked");
+    });
+    document.querySelector(".message").addEventListener("click", () => {
+      document.querySelector(".name").classList.remove("clicked");
+      document.querySelector(".email").classList.remove("clicked");
+      document.querySelector(".message").classList.add("clicked");
+    });
+  </script>
+</html>

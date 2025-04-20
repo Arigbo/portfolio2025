@@ -1,11 +1,9 @@
 @import "./index.css";
+@import "./admin.css";
+@import "./fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.css";
 body {
   background-color: rgb(247, 244, 244);
   color: black;
-  a {
-    text-decoration: none;
-    color: black;
-  }
 }
 * {
   padding: 0;
@@ -16,24 +14,31 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  ul{
+    list-style: none;
+  }
 }
-button {
-  font-size: 14px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 2.4rem;
-  border-radius: 0.2rem;
-  border: 1px solid black;
-  background-color: green;
-  color: white;
-  font-weight: 500;
-  transition: all 0.8s ease;
-}
-button:hover {
-  background-color: rgb(29, 74, 29);
-}
+// button,.button {
+//   font-size: 14px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   height: 2.4rem;
+//   border-radius: 0.2rem;
+//   border: 1px solid black;
+//   background-color: green;
+//   color: white;
+//   font-weight: 500;
+//   transition: all 0.8s ease;
+// }
+// .button:hover,button:hover {
+//   background-color: rgb(29, 74, 29);
+// }
 .name,.email,.message {
   width: 100%;
   display: flex;
@@ -87,7 +92,4 @@ button:hover {
     color: gray;
   }
 }
-button {
-}
-button:hover {
-}
+
