@@ -84,12 +84,13 @@
             <div class="hero_inner_right">
               <div class="top">
                 <h1>
-                  <span><span><</span>span<span>> </span></span>Hey, I'm
-                  Jesse<span> <span><</span>/span<span>></span></span>
+                  <span
+                    ><i class="fas fa-chevron-left"></i>span<i class="fas fa-chevron-right"></i></span
+                  > Hey, I'm Jesse <span><i class="fas fa-chevron-left"></i>/span<i class="fas fa-chevron-right"></i></span>
                 </h1>
               </div>
               <div class="second">
-                <h1>Junior <span>{Front-End}</span></h1>
+                <h1>Junior<span>{Front-End}</span></h1>
                 <h1>Web Developer_</h1>
               </div>
               <div class="third">
@@ -372,6 +373,7 @@
     document.querySelector(".exit").addEventListener("click", () => {
       document.querySelector(".menu").classList.remove("show");
     });
+
     function getProject() {
       fetch("http://localhost:3000/projects")
         .then((results) => results.json())
