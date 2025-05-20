@@ -101,7 +101,7 @@
       document.querySelector(".admin_bottom").classList.remove("show");
     });
     function getProject() {
-      fetch("http://localhost:3000/projects")
+      fetch("/db.json")
         .then((results) => results.json())
         .then((data) => {
           console.log(data);

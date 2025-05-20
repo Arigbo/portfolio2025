@@ -178,7 +178,7 @@
   justify-content: center;
   width: 100%;
   padding: 0;
-  height: 80vh;
+  height: 40rem;
   background-color: white;
   border-bottom: 1px solid gray;
 }
@@ -190,7 +190,7 @@
   justify-content: space-between;
 }
 .portfolio_inner .hero_inner_left {
-  width: 30%;
+  width: 26rem;
   height: 100%;
   display: flex;
   align-items: center;
@@ -207,11 +207,10 @@
 }
 .portfolio_inner .hero_inner_left .box {
   background-color: green;
-  height: 56vh;
-  bottom: 3rem;
+  height: 32rem;
   border-radius: 1rem;
-  width: 20%;
-  right: 65%;
+  width: 25rem;
+  left: 7rem;
   position: absolute;
 }
 .portfolio_inner .hero_inner_right {
@@ -272,7 +271,7 @@
   font-size: 20px;
   font-weight: 600;
 }
-@media screen and (max-width: 777px) {
+@media screen and (max-width: 1200px) {
   .portfolio_inner .hero {
     height: 60vh;
   }
@@ -399,14 +398,14 @@
 .portfolio_inner .exp_inner_top p span, .portfolio_inner .exp_inner_bottom p span {
   color: gray;
 }
-.portfolio_inner .exp_inner_top .left, .portfolio_inner .exp_inner_bottom .left {
+.portfolio_inner .exp_inner_top_inner .left, .portfolio_inner .exp_inner_bottom_inner .left {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 30%;
   gap: 1rem;
 }
-.portfolio_inner .exp_inner_top .left .box, .portfolio_inner .exp_inner_bottom .left .box {
+.portfolio_inner .exp_inner_top_inner .left .box, .portfolio_inner .exp_inner_bottom_inner .left .box {
   width: 100%;
   height: 3rem;
   border: 1px solid gray;
@@ -416,78 +415,93 @@
   align-items: center;
   justify-content: center;
 }
-.portfolio_inner .exp_inner_top .left .box_inner, .portfolio_inner .exp_inner_bottom .left .box_inner {
+.portfolio_inner .exp_inner_top_inner .left .box.active, .portfolio_inner .exp_inner_bottom_inner .left .box.active {
+  border: 1px solid black;
+}
+.portfolio_inner .exp_inner_top_inner .left .box.active h1, .portfolio_inner .exp_inner_bottom_inner .left .box.active h1 {
+  color: black;
+}
+.portfolio_inner .exp_inner_top_inner .left .box_inner, .portfolio_inner .exp_inner_bottom_inner .left .box_inner {
   width: 95%;
   height: 95%;
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-.portfolio_inner .exp_inner_top .left .box_inner_left, .portfolio_inner .exp_inner_bottom .left .box_inner_left {
+.portfolio_inner .exp_inner_top_inner .left .box_inner_left, .portfolio_inner .exp_inner_bottom_inner .left .box_inner_left {
   height: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.portfolio_inner .exp_inner_top .left .box_inner_left img, .portfolio_inner .exp_inner_bottom .left .box_inner_left img {
+.portfolio_inner .exp_inner_top_inner .left .box_inner_left img, .portfolio_inner .exp_inner_bottom_inner .left .box_inner_left img {
   height: 100%;
   width: 100%;
 }
-.portfolio_inner .exp_inner_top .left .box_inner_right, .portfolio_inner .exp_inner_bottom .left .box_inner_right {
+.portfolio_inner .exp_inner_top_inner .left .box_inner_right, .portfolio_inner .exp_inner_bottom_inner .left .box_inner_right {
   display: flex;
   flex-direction: column;
   gap: 0.1rem;
 }
-.portfolio_inner .exp_inner_top .left .box_inner_right h1, .portfolio_inner .exp_inner_bottom .left .box_inner_right h1 {
+.portfolio_inner .exp_inner_top_inner .left .box_inner_right h1, .portfolio_inner .exp_inner_bottom_inner .left .box_inner_right h1 {
   font-size: 18px;
   font-weight: 500;
   color: grey;
 }
-.portfolio_inner .exp_inner_top .left .box_inner_right h5, .portfolio_inner .exp_inner_bottom .left .box_inner_right h5 {
+.portfolio_inner .exp_inner_top_inner .left .box_inner_right h5, .portfolio_inner .exp_inner_bottom_inner .left .box_inner_right h5 {
   font-size: 12px;
   font-weight: 600;
   color: gray;
 }
-.portfolio_inner .exp_inner_top .left .box:hover, .portfolio_inner .exp_inner_bottom .left .box:hover {
+.portfolio_inner .exp_inner_top_inner .left .box:hover, .portfolio_inner .exp_inner_bottom_inner .left .box:hover {
   border: 1px solid black;
 }
-.portfolio_inner .exp_inner_top .left .box:hover h1, .portfolio_inner .exp_inner_bottom .left .box:hover h1 {
+.portfolio_inner .exp_inner_top_inner .left .box:hover h1, .portfolio_inner .exp_inner_bottom_inner .left .box:hover h1 {
   color: black;
 }
-.portfolio_inner .exp_inner_top .right, .portfolio_inner .exp_inner_bottom .right {
+.portfolio_inner .exp_inner_top_inner_right, .portfolio_inner .exp_inner_bottom_inner_right {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 70%;
+}
+.portfolio_inner .exp_inner_top_inner_right .expmssg, .portfolio_inner .exp_inner_bottom_inner_right .expmssg {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
   gap: 1rem;
 }
-.portfolio_inner .exp_inner_top .right_header, .portfolio_inner .exp_inner_top .right_inner, .portfolio_inner .exp_inner_top .right_bottom, .portfolio_inner .exp_inner_bottom .right_header, .portfolio_inner .exp_inner_bottom .right_inner, .portfolio_inner .exp_inner_bottom .right_bottom {
+.portfolio_inner .exp_inner_top_inner_right .expmssg.show, .portfolio_inner .exp_inner_bottom_inner_right .expmssg.show {
+  display: flex;
+}
+.portfolio_inner .exp_inner_top_inner_right .expmssg_header, .portfolio_inner .exp_inner_top_inner_right .expmssg_inner, .portfolio_inner .exp_inner_top_inner_right .expmssg_bottom, .portfolio_inner .exp_inner_bottom_inner_right .expmssg_header, .portfolio_inner .exp_inner_bottom_inner_right .expmssg_inner, .portfolio_inner .exp_inner_bottom_inner_right .expmssg_bottom {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.portfolio_inner .exp_inner_top .right_header h1, .portfolio_inner .exp_inner_bottom .right_header h1 {
+.portfolio_inner .exp_inner_top_inner_right .expmssg_header h1, .portfolio_inner .exp_inner_bottom_inner_right .expmssg_header h1 {
   width: 100%;
   color: green;
   font-size: 30px;
   font-weight: 600;
 }
-.portfolio_inner .exp_inner_top .right_inner ul, .portfolio_inner .exp_inner_bottom .right_inner ul {
+.portfolio_inner .exp_inner_top_inner_right .expmssg_inner ul, .portfolio_inner .exp_inner_bottom_inner_right .expmssg_inner ul {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-.portfolio_inner .exp_inner_top .right_inner ul li, .portfolio_inner .exp_inner_bottom .right_inner ul li {
+.portfolio_inner .exp_inner_top_inner_right .expmssg_inner ul li, .portfolio_inner .exp_inner_bottom_inner_right .expmssg_inner ul li {
   font-size: 18px;
 }
-.portfolio_inner .exp_inner_top .right_bottom_inner, .portfolio_inner .exp_inner_bottom .right_bottom_inner {
+.portfolio_inner .exp_inner_top_inner_right .expmssg_bottom_inner, .portfolio_inner .exp_inner_bottom_inner_right .expmssg_bottom_inner {
   width: 100%;
   display: flex;
   gap: 1rem;
   align-items: center;
 }
-.portfolio_inner .exp_inner_top .right_bottom_inner .box, .portfolio_inner .exp_inner_bottom .right_bottom_inner .box {
+.portfolio_inner .exp_inner_top_inner_right .expmssg_bottom_inner .box, .portfolio_inner .exp_inner_bottom_inner_right .expmssg_bottom_inner .box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -498,7 +512,7 @@
   width: fit-content;
   padding-inline: 0.5rem;
 }
-.portfolio_inner .exp_inner_top .right_bottom_inner .box h3, .portfolio_inner .exp_inner_bottom .right_bottom_inner .box h3 {
+.portfolio_inner .exp_inner_top_inner_right .expmssg_bottom_inner .box h3, .portfolio_inner .exp_inner_bottom_inner_right .expmssg_bottom_inner .box h3 {
   font-size: 16px;
   font-weight: 400;
 }
@@ -521,7 +535,7 @@
     gap: 0.5rem;
   }
   .portfolio_inner .exp_inner_bottom .left {
-    width: 35%;
+    width: 29%;
   }
   .portfolio_inner .exp_inner_bottom .left .box {
     height: 2.5rem;
@@ -529,15 +543,16 @@
   }
   .portfolio_inner .exp_inner_bottom .left .box_inner {
     gap: 0.3rem;
-    width: 93%;
+    width: 95%;
     height: 80%;
+    justify-content: center;
   }
   .portfolio_inner .exp_inner_bottom .left .box_inner_left {
     height: 100%;
     width: 1.5rem;
   }
   .portfolio_inner .exp_inner_bottom .left .box h1 {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
   }
   .portfolio_inner .exp_inner_bottom .left .box h5 {
@@ -545,27 +560,26 @@
     font-weight: 600;
   }
   .portfolio_inner .exp_inner_bottom .right {
-    width: 65%;
+    width: 71%;
     border-left: 1px solid grey;
-    padding-inline-start: 0.5rem;
   }
-  .portfolio_inner .exp_inner_bottom .right h1 {
+  .portfolio_inner .exp_inner_bottom .right .expmssg h1 {
     font-size: 20px;
     font-weight: 600;
   }
-  .portfolio_inner .exp_inner_bottom .right ul li {
+  .portfolio_inner .exp_inner_bottom .right .expmssg ul li {
     font-size: 14px;
   }
-  .portfolio_inner .exp_inner_bottom .right_bottom {
+  .portfolio_inner .exp_inner_bottom .right .expmssg_bottom {
     gap: 0.2rem;
     width: 100%;
   }
-  .portfolio_inner .exp_inner_bottom .right_bottom .box {
+  .portfolio_inner .exp_inner_bottom .right .expmssg_bottom .box {
     border-radius: 0.2rem;
     height: 1.4rem;
     padding-inline: 0.2rem;
   }
-  .portfolio_inner .exp_inner_bottom .right_bottom .box h3 {
+  .portfolio_inner .exp_inner_bottom .right .expmssg_bottom .box h3 {
     font-weight: 600;
     font-size: 12px;
   }
@@ -619,7 +633,15 @@
   width: 40%;
   height: 100%;
 }
-.portfolio_inner .projects_inner .box_inner_left img {
+.portfolio_inner .projects_inner .box_inner_left i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  background-color: black;
+  color: white;
+}
+.portfolio_inner .projects_inner .box_inner_left i, .portfolio_inner .projects_inner .box_inner_left img {
   width: 100%;
   height: 100%;
   border-radius: 1rem;
