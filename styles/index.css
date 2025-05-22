@@ -4,6 +4,15 @@
   align-items: center;
   width: 100%;
 }
+.portfolio .pulse-cursor {
+  pointer-events: none;
+  animation: blink 1s step-start infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0; /* Make the cursor invisible at 50% */
+  }
+}
 .portfolio_nav {
   display: flex;
   flex-direction: column;

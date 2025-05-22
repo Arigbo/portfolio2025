@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="./styles/custom.css" />
   </head>
   <body>
@@ -77,11 +78,11 @@
       <div class="portfolio_inner">
         <section class="hero">
           <div class="hero_inner">
-            <div class="hero_inner_left">
+            <div class="hero_inner_left" data-aos="fade-right">
               <img src="./1000015902.jpg" alt="" />
               <div class="box"></div>
             </div>
-            <div class="hero_inner_right">
+            <div class="hero_inner_right" data-aos="fade-left">
               <div class="top">
                 <h1>
                   <span
@@ -99,7 +100,7 @@
               </div>
               <div class="second">
                 <h1>Senior<span>{Front-End}</span></h1>
-                <h1>Web Developer_</h1>
+                <h1>Web Developer<span class="pulse-cursor">_</span></h1>
               </div>
               <div class="third">
                 <p>
@@ -136,7 +137,7 @@
           <div class="exp_header">
             <h1>.Experience</h1>
           </div>
-          <div class="exp_inner">
+          <div class="exp_inner" data-aos="fade-up">
             <div class="exp_inner_top">
               <p>5+ years of passion for <span>programming techniques</span></p>
             </div>
@@ -298,7 +299,14 @@
       </footer>
     </div>
   </body>
+  
   <script>
+  //   const cursor = document.querySelector('.pulse-cursor');
+  // document.addEventListener('mousemove', (e) => {
+  //   cursor.style.left = `${e.pageX}px`;
+  //   cursor.style.top = `${e.pageY}px`;
+  // })
+      AOS.init();
     document.querySelector(".bar").addEventListener("click", () => {
       document.querySelector(".menu").classList.add("show");
     });

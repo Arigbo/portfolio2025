@@ -3,6 +3,18 @@
   flex-direction: column;
   align-items: center;
 
+  
+  .pulse-cursor {
+    pointer-events: none;
+    animation: blink 1s step-start infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0; /* Make the cursor invisible at 50% */
+    }
+  }
+  
   width: 100%;
   &_nav {
     display: flex;
