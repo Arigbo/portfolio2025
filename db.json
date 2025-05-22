@@ -52,7 +52,22 @@
   "experiences": [
     {
       "name": "Ancients",
-     "job-title":"Frontend web Dev",
+     "jobTitle":"Frontend Web Dev",
+      "joined": {
+        "month": "June",
+        "year": 2022
+      },
+      "left": {
+        "month": "January",
+        "year": 2025
+      },
+      "tools": {
+        "JavaScript": "true"
+      }
+    },
+    {
+      "name": "Ancients",
+     "jobTitle":"Frontend Web Dev",
       "joined": {
         "month": "June",
         "year": 2022
