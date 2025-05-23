@@ -23,6 +23,25 @@ body {
   list-style: none;
 }
 
+button, .button {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 2.4rem;
+  border-radius: 0.2rem;
+  border: 1px solid black;
+  background-color: green;
+  color: white;
+  font-weight: 500;
+  transition: all 0.8s ease;
+}
+
+.button:hover, button:hover {
+  background-color: rgb(29, 74, 29);
+}
+
 .name, .email, .message {
   width: 100%;
   display: flex;

@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./styles/custom.css" />
   </head>
   <body>
@@ -137,7 +137,12 @@
           <div class="exp_header">
             <h1>.Experience</h1>
           </div>
-          <div class="exp_inner" data-aos="fade-up">
+          <div
+            class="exp_inner"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="3000"
+          >
             <div class="exp_inner_top">
               <p>5+ years of passion for <span>programming techniques</span></p>
             </div>
@@ -151,80 +156,79 @@
           <div class="projects_header">
             <h1>.Projects</h1>
           </div>
-          <div class="projects_inner"></div>
+          <div class="projects_inner"data-aos="zoom-out"></div>
         </section>
         <section class="skills">
           <div class="skills_header">
             <h1>.Skills</h1>
           </div>
           <div class="skills_top">
-            <div class="left">
+            <div class="left" data-aos="fade-right">
               <div class="left_inner">
                 <h1><span>Hard</span></h1>
                 <h1>Skills:</h1>
               </div>
             </div>
             <div class="right">
-              <div class="skill">
+              <div class="skill" data-aos="fade-left" data-aos-duration="8000">
                 <div class="skill_inner">
-                   <i class="fab fa-html5"></i>
+                  <i class="fab fa-html5"></i>
                   <h2>HTML</h2>
                 </div>
               </div>
-              <div class="skill">
+              <div class="skill" data-aos="fade-right" data-aos-duration="7000">
                 <div class="skill_inner">
                   <i class="fab fa-css3"></i>
                   <h2>CSS</h2>
                 </div>
               </div>
-              <div class="skill">
+              <div class="skill" data-aos="fade-left" data-aos-duration="6000">
                 <div class="skill_inner">
                   <i class="fab fa-sass"></i>
                   <h2>Sass</h2>
                 </div>
               </div>
-              <div class="skill">
+              <div class="skill" data-aos="fade-left" data-aos-duration="5000">
                 <div class="skill_inner">
                   <i class="fab fa-js"></i>
                   <h2>JavaScript</h2>
                 </div>
               </div>
-              <div class="skill">
+              <div class="skill" data-aos="fade-left" data-aos-duration="4000">
                 <div class="skill_inner">
                   <i class="fab fa-react"></i>
                   <h2>React</h2>
                 </div>
               </div>
-              <div class="skill">
+              <div class="skill" data-aos="fade-left" data-aos-duration="3000">
                 <div class="skill_inner">
-           <i class="fab fa-github"></i>
+                  <i class="fab fa-github"></i>
                   <h2>Github</h2>
                 </div>
               </div>
-              <div class="skill">
+              <div class="skill" data-aos="fade-left" data-aos-duration="2000">
                 <div class="skill_inner">
                   <i class="fab fa-node"></i>
                   <h2>Node</h2>
                 </div>
               </div>
-              <div class="skill">
+              <div class="skill" data-aos="fade-left" data-aos-duration="1000">
                 <div class="skill_inner">
                   <i class="fab fa-python"></i>
                   <h2>Python</h2>
                 </div>
               </div>
-         
             </div>
           </div>
           <div class="border"></div>
           <div class="skills_bottom">
-            <div class="top">
+            <div class="top" data-aos="fade-down">
               <div class="top_inner">
                 <h1><span>Soft</span></h1>
                 <h1>Skills:</h1>
               </div>
             </div>
-            <div class="bottom">
+            <div class="bottom" data-aos="fade-up">
               <div class="skill">
                 <div class="skill_inner">
                   <h1>?</h1>
@@ -261,7 +265,7 @@
       </div>
       <footer class="portfolio_footer">
         <div class="portfolio_footer_inner">
-          <div class="left">
+          <div class="left" data-aos="fade-right">
             <p>
               <span class="tag"
                 ><span class="tag"><</span>p<span class="tag">></span></span
@@ -273,7 +277,7 @@
               >
             </p>
           </div>
-          <div class="right">
+          <div class="right" data-aos="fade-left">
             <form action="" class="right_inner">
               <div class="right_inner_top">
                 <div class="name">
@@ -299,22 +303,10 @@
       </footer>
     </div>
   </body>
-  
-  <script>
-  //   const cursor = document.querySelector('.pulse-cursor');
-  // document.addEventListener('mousemove', (e) => {
-  //   cursor.style.left = `${e.pageX}px`;
-  //   cursor.style.top = `${e.pageY}px`;
-  // })
-      AOS.init();
-    document.querySelector(".bar").addEventListener("click", () => {
-      document.querySelector(".menu").classList.add("show");
-    });
-    document.querySelector(".exit").addEventListener("click", () => {
-      document.querySelector(".menu").classList.remove("show");
-    });
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    function getProject() {
+  <script>
+        function getProject() {
       fetch("./db.json")
         .then((results) => results.json())
         .then((data) => {
@@ -459,7 +451,20 @@
     // getExpriencesAbout();
     // getExperiences();
     getProject();
-document.querySelector(".name").addEventListener("click", () => {
+    AOS.init({
+      duration: 1200,
+      once:false,
+    });
+    
+    document.querySelector(".bar").addEventListener("click", () => {
+      document.querySelector(".menu").classList.add("show");
+    });
+    document.querySelector(".exit").addEventListener("click", () => {
+      document.querySelector(".menu").classList.remove("show");
+    });
+
+
+    document.querySelector(".name").addEventListener("click", () => {
       document.querySelector(".name").classList.add("clicked");
       document.querySelector(".email").classList.remove("clicked");
       document.querySelector(".message").classList.remove("clicked");
