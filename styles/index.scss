@@ -2,19 +2,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 
-  
   .pulse-cursor {
     pointer-events: none;
     animation: blink 1s step-start infinite;
   }
-  
+
   @keyframes blink {
     50% {
       opacity: 0; /* Make the cursor invisible at 50% */
     }
   }
-  
+
   width: 100%;
   &_nav {
     display: flex;
@@ -664,13 +664,14 @@
                 font-size: 12px;
                 background-color: black;
                 color: white;
+                          width: 100%;
+                height: 100%;
               }
               i,
               img {
                 width: 100%;
                 height: 100%;
                 border-radius: 1rem;
-                // border: 1px solid;
               }
               .bottom {
                 display: flex;
@@ -692,14 +693,17 @@
                   width: 100%;
                   align-items: center;
                   justify-content: center;
-
                   &_inner {
                     width: 35%;
                     width: 35%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    img {
+                          i {
+    
+                color: white;
+              }
+                    i,img {
                       border: 0;
                     }
                   }

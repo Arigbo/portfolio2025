@@ -47,26 +47,26 @@
                 <li><a href="contact.html">Contact</a></li>
               </ul>
               <div class="menu_inner_right">
-                <div class="link">
+                <a href="" class="link">
                   <i class="far fa-user"></i>
                   <h1>User</h1>
-                </div>
-                <div class="link">
+                </a>
+                <a href="" class="link">
                   <i class="fab fa-linkedin"></i>
-                  <h1>User</h1>
-                </div>
-                <div class="link">
+                  <h1>Use</h1>
+                </a>
+                <a href="" class="link">
                   <i class="fab fa-twitter"></i>
-                  <h1>User</h1>
-                </div>
-                <div class="link">
+                  <h1>@anc13nts</h1>
+                </a>
+                <a href="" class="link">
                   <i class="fab fa-whatsapp"></i>
                   <h1>User</h1>
-                </div>
-                <div class="link">
+                </a>
+                <a href="" class="link">
                   <i class="fab fa-github"></i>
-                  <h1>User</h1>
-                </div>
+                  <h1>Arigbo</h1>
+                </a>
               </div>
             </div>
           </div>
@@ -306,6 +306,29 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script>
+        document.querySelector(".bar").addEventListener("click", () => {
+      document.querySelector(".menu").classList.add("show");
+    });
+    document.querySelector(".exit").addEventListener("click", () => {
+      document.querySelector(".menu").classList.remove("show");
+    });
+
+
+    document.querySelector(".name").addEventListener("click", () => {
+      document.querySelector(".name").classList.add("clicked");
+      document.querySelector(".email").classList.remove("clicked");
+      document.querySelector(".message").classList.remove("clicked");
+    });
+    document.querySelector(".email").addEventListener("click", () => {
+      document.querySelector(".name").classList.remove("clicked");
+      document.querySelector(".email").classList.add("clicked");
+      document.querySelector(".message").classList.remove("clicked");
+    });
+    document.querySelector(".message").addEventListener("click", () => {
+      document.querySelector(".name").classList.remove("clicked");
+      document.querySelector(".email").classList.remove("clicked");
+      document.querySelector(".message").classList.add("clicked");
+    });
         function getProject() {
       fetch("./db.json")
         .then((results) => results.json())
@@ -454,30 +477,6 @@
     AOS.init({
       duration: 1200,
       once:false,
-    });
-    
-    document.querySelector(".bar").addEventListener("click", () => {
-      document.querySelector(".menu").classList.add("show");
-    });
-    document.querySelector(".exit").addEventListener("click", () => {
-      document.querySelector(".menu").classList.remove("show");
-    });
-
-
-    document.querySelector(".name").addEventListener("click", () => {
-      document.querySelector(".name").classList.add("clicked");
-      document.querySelector(".email").classList.remove("clicked");
-      document.querySelector(".message").classList.remove("clicked");
-    });
-    document.querySelector(".email").addEventListener("click", () => {
-      document.querySelector(".name").classList.remove("clicked");
-      document.querySelector(".email").classList.add("clicked");
-      document.querySelector(".message").classList.remove("clicked");
-    });
-    document.querySelector(".message").addEventListener("click", () => {
-      document.querySelector(".name").classList.remove("clicked");
-      document.querySelector(".email").classList.remove("clicked");
-      document.querySelector(".message").classList.add("clicked");
     });
   </script>
 </html>

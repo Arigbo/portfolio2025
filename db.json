@@ -8,8 +8,18 @@
       "about": "Lorem, ipsum dolor sit amet consectetur adipisicing elit Beatae sint a soluta reprehenderit voluptatum laboriosammagni necessitatibus officia rerum iste hic ea, ver assumenda excepturi quia enim dolorem itaque. Accusamu",
       "client": "Ancients",
       "category": "Web Development",
-      "tech": ["AosJs", "NodeJs", "JavaScript", "HTML", "SCSS", "CSS"],
-      "links": ["https://ancients-gold.vercel.app/", "h1"],
+      "tech": [
+        "AosJs",
+        "NodeJs",
+        "JavaScript",
+        "HTML",
+        "SCSS",
+        "CSS"
+      ],
+      "links": [
+        "https://ancients-gold.vercel.app/",
+        "h1"
+      ],
       "date": {
         "day": "Monday",
         "month": "June",
@@ -24,8 +34,15 @@
       "about": "   Ralonick is a fast growing construction company rapidly                  spreading its frontiers across Nigeria, with sole interest\n                      in operation and maintenance of production facilities,\n                      local and foreign procurement of oil & gas materials and\n                      consultation. It is a registered private limited liability\n                      company under the Nigeria Law. Our operation is within the\n                      framework of commercial and industrial activities,\n                      developing and carrying out basic and detailed service in\n                      Engineering, Procurement, Construction and Equipment\n                      leasing in Land and Marine. We adopt a system of Total\n                      quality Management (TQM) at a reasonable cost and within\n                      the shortest possible time, in conjunction with our\n                      technical partners. We provide end to end service in the\n                      design, engineering, procurement, fabrication,\n                      installation, repair and support of Glass fiber Reinforced\n                      Epoxy (GRE) Polyester (GRP) and Vinylester Pipe system and\n                      products",
       "client": "Ralonic Plc",
       "category": "Web dev",
-      "tech": ["NextJs", "NodeJs", "TypeScript"],
-      "links": ["https://ralonic.vercel.app/", "https://ralonic.vercel.app/"],
+      "tech": [
+        "NextJs",
+        "NodeJs",
+        "TypeScript"
+      ],
+      "links": [
+        "https://ralonic.vercel.app/",
+        "https://ralonic.vercel.app/"
+      ],
       "date": {
         "day": 4,
         "month": 3,
@@ -40,11 +57,43 @@
       "about": "                      At our company, we're dedicated to crafting the highest\n                      quality beverages possible. We take pride in our products,\n                      and we hope that you enjoy them as much as we do. Thank\n                      you for visiting our website! If you have any questions or\n                      feedback, please don't hesitate to contact us. We're\n                      always happy to hear from our customers",
       "client": "Ancients",
       "category": "Web app",
-      "tech": ["AosJs", "NodeJs", "JavaScript", "HTML", "SCSS", "CSS"],
-      "links": ["https://harishi.vercel.app/", "https://harishi.vercel.app/"],
+      "tech": [
+        "AosJs",
+        "NodeJs",
+        "JavaScript",
+        "HTML",
+        "SCSS",
+        "CSS"
+      ],
+      "links": [
+        "https://harishi.vercel.app/",
+        "https://harishi.vercel.app/"
+      ],
       "date": {
         "day": 0,
         "month": 3,
+        "year": 2025
+      }
+    },
+
+    {
+      "id": "ef22",
+      "name": "spentrack",
+      "img": "/Screenshot_12-6-2025_0207_127.0.0.1.jpeg",
+      "qrcode": "/qrcode_spentrack.vercel.app.png",
+      "about": "",
+      "client": "Ancients",
+      "category": "Expense Tracker",
+      "tech": [
+        "Html, JavaScript, CSS, SCSS"
+      ],
+      "links": [
+        "https://spentrack.vercel.app/",
+        ""
+      ],
+      "date": {
+        "day": 4,
+        "month": 5,
         "year": 2025
       }
     }
@@ -52,7 +101,7 @@
   "experiences": [
     {
       "name": "Ancients",
-     "jobTitle":"Frontend Web Dev",
+      "jobTitle": "Frontend Web Dev",
       "joined": {
         "month": "June",
         "year": 2022
@@ -63,11 +112,12 @@
       },
       "tools": {
         "JavaScript": "true"
-      }
+      },
+      "id": "0925"
     },
     {
       "name": "Ancients",
-     "jobTitle":"Frontend Web Dev",
+      "jobTitle": "Frontend Web Dev",
       "joined": {
         "month": "June",
         "year": 2022
@@ -78,7 +128,8 @@
       },
       "tools": {
         "JavaScript": "true"
-      }
+      },
+      "id": "a62d"
     }
   ]
 }
